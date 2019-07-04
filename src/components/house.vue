@@ -26,6 +26,7 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import wxapi from '@/common/wxapi.js'
 export default {
   name: 'house',
   data () {
@@ -54,7 +55,7 @@ export default {
   computed: {
     swiper() {
       return this.$refs.mySwiper.swiper
-    }
+    },
   },
   components: {
     swiper,
@@ -65,9 +66,47 @@ export default {
     // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
     console.log('this is current swiper instance object', this.swiper)
     this.swiper.slideTo(3, 1000, false)
+    wxapi.wxRegister(this.wxRegCallback)
   },
   methods: {
-   
+   wxRegCallback () {
+      // 用于微信JS-SDK回调
+      this.wxShareTimeline()
+      this.wxShareAppMessage()
+    },
+    wxShareTimeline () {
+      // 微信自定义分享到朋友圈
+      let option = {
+        title: '限时团购周 挑战最低价', // 分享标题, 请自行替换
+        link: window.location.href.split('#')[0], // 分享链接，根据自身项目决定是否需要split
+        imgUrl: 'logo.png', // 分享图标, 请自行替换，需要绝对路径
+        success: () => {
+          alert('分享成功')
+        },
+        error: () => {
+          alert('已取消分享')
+        }
+      }
+      // 将配置注入通用方法
+      wxapi.ShareTimeline(option)
+    },
+    wxShareAppMessage () {
+      // 微信自定义分享给朋友
+      let option = {
+        title: '限时团购周 挑战最低价', // 分享标题, 请自行替换
+        desc: '限时团购周 挑战最低价', // 分享描述, 请自行替换
+        link: window.location.href.split('#')[0], // 分享链接，根据自身项目决定是否需要split
+        imgUrl: 'logo.png', // 分享图标, 请自行替换，需要绝对路径
+        success: () => {
+          alert('分享成功')
+        },
+        error: () => {
+          alert('已取消分享')
+        }
+      }
+      // 将配置注入通用方法
+      wxapi.ShareAppMessage(option)
+    }
   }
 }
 </script>

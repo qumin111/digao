@@ -26,7 +26,7 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import wxapi from '@/common/wxapi.js'
+import wxapi from '../../common/wxapi.js'
 export default {
   name: 'house',
   data () {

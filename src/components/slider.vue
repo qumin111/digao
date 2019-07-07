@@ -119,11 +119,11 @@ export default {
     .ui-nav-logo {
         margin-bottom: 98px;
     }
-   .navbar-expand-lg .navbar-nav {
+   .ui-nav-box .navbar-expand-lg .navbar-nav {
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    .navbar-expand-lg {
+   .ui-nav-box .navbar-expand-lg {
         -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
         text-align: center;
@@ -131,7 +131,7 @@ export default {
     .ui-nav-box, .ui-navbar {
         height: 100%;
     }
-    .navbar-collapse {
+    .ui-nav-box .navbar-collapse {
         -webkit-box-align: flex-start;
         align-items: flex-start;
     }

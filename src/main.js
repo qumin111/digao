@@ -21,7 +21,7 @@ Vue.use(VueAwesomeSwiper);
 
 Vue.config.productionTip = false
 
-const lang = navigator.language || navigator.userLanguage; 
+const lang = localStorage.lang || navigator.language; 
 
 const i18n = new VueI18n({
   locale: lang,    // 语言标识

@@ -3,8 +3,8 @@
   <div id="app">
     <b-container fluid class="ui-wrap no-pd"> 
       <b-row align-v="start" class="ui-wrp-start h" no-gutters> 
-        <b-col sm="2" class="move-pr ui-slider-box h-ui-auto"> <slider-nav></slider-nav> </b-col > 
-        <b-col sm="10" class=" move-pl h ui-cont-box">
+        <b-col md="2" class="move-pr ui-slider-box h-ui-auto"> <slider-nav></slider-nav> </b-col > 
+        <b-col md="10" class=" move-pl h ui-cont-box">
             <transition name="move" mode="out-in">
                 <router-view></router-view>    
             </transition>
@@ -31,26 +31,29 @@ export default {
   padding-right: 0;
 } */
 
-.no-pd{
+#app .no-pd{
     padding-left: 0;
     padding-right: 0;
+}
+#app button:focus{
+  outline: none;
 }
 img{
   width: 100%;
 }
-.ui-slider-box {
+.ui-wrp-start .ui-slider-box {
   position: fixed;
   top:0;
   z-index: 99;
 }
-.ui-cont-box {
+.ui-wrp-start .ui-cont-box {
   padding-top: 48px;
 }
 @media (min-width: 992px) {
-  .ui-slider-box {
+  .ui-wrp-start .ui-slider-box {
     position: relative;
   }
-  .ui-cont-box {
+  .ui-wrp-start .ui-cont-box {
     padding-top: 0;
   }
 }

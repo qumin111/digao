@@ -14,7 +14,9 @@ export default {
 <style>
 html{
   font-size: 14px;
-   letter-spacing: 1px;
+  letter-spacing: 1px;
+  font-family:Helvetica;
+  -webkit-overflow-scrolling: touch;
 }
 html, body, #app, .ui-wrap{
   height: 100%;

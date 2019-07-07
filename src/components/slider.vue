@@ -1,6 +1,6 @@
 <template>
     <div class="ui-nav-box">
-        <b-navbar toggleable="lg" class="ui-navbar">
+        <b-navbar toggleable="lg" class="ui-navbar" type="dark" variant="dark">
             
             <b-navbar-brand href="#" class="ui-nav-logo">logo</b-navbar-brand>
                 
@@ -48,15 +48,25 @@ export default {
 };
 </script>
 <style>
-.ui-slider-bei,
+.ui-slider-bei{
+    color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40;
+    text-align: center;
+    line-height: 35px;
+}
 .ui-slider-lang {
-    color: #333;
-    /* color: rgba(255, 255, 255, 0.5); */
-    display: none;
+    color: rgba(255, 255, 255, 0.5);
 }
 .ui-slider-lang {
     cursor: pointer;
     margin-bottom: 10px;
+    position: absolute;
+    right: 80px;
+    top: 14px;
 }
 
 .h{
@@ -72,17 +82,14 @@ export default {
     color: #9B9B9B;
     line-height: 30px;
 }
-.ui-nav-box {
-    background-color: rgba(250,250,250,.9);
-}
 .navbar-light .navbar-nav .nav-link{
     color: #333;
 }
 .ui-slider-lang span:hover,
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:visited{
-    color: #77914f;
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:visited{
+    color: rgba(255, 255, 255, 0.75);
     font-weight: bold;
 }
 @-webkit-keyframes fadeInOut2 {
@@ -98,6 +105,15 @@ export default {
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-duration: 0.8s;
+}
+
+div .swiper-button-next,
+div .swiper-button-prev{
+    background-size: 16px 44px;
+}
+div .swiper-button-next:focus,
+div .swiper-button-prev:focus{
+    outline: none;
 }
 @media (min-width: 768px) { 
    
@@ -138,6 +154,18 @@ export default {
     .ui-slider-bei,
     .ui-slider-lang {
          display: block;
+    }
+    .ui-slider-lang {
+        right: auto;
+        top: auto;
+        position: inherit;
+    }
+    .ui-slider-bei{
+        position: inherit;
+        width: auto;
+        background-color: transparent;
+        text-align: center;
+        line-height: 1;
     }
     .ui-item-txt {
         display: none;

@@ -1,6 +1,8 @@
 <template>
-  <div class="ui-brand-bg anim_fade_image" >
-      <div class="ui-brand-text animated lightSpeedIn delay-1s">
+  <div class="h" >
+    <div class="ui-brand-bg">
+      <div class="ui-brand-text animated zoomInDown">
+      <!-- <div class="ui-brand-text animated lightSpeedIn delay-1s"> -->
         <h2>{{$t('BrandConcept')}}</h2>
         <p class="ui-font-s ui-brand-one">
           {{$t('BrandDesignSimple')}}
@@ -15,6 +17,7 @@
           {{$t('BrandFiveP')}}
         </p> 
       </div>
+    </div>
   </div>
 </template>
 
@@ -39,10 +42,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .ui-brand-bg {
-    width: 100%;
-    height: 100%;
     background: url('../assets/1.jpg') no-repeat top center;
     background-size: cover;
+    height: 100%;
   }
   .ui-brand-text {
      padding: 20px 35px 15px 35px;

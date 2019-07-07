@@ -1,7 +1,7 @@
 <template>
-  <div class="home ui-h-auto">
+  <div class="home h-ui-auto">
       
-     <swiper :options="swiperOption" ref="mySwiper" effect="fade" class="h">
+      <swiper :options="swiperOption" ref="mySwiper" effect="fade" class="h">
         <!-- slides -->
         <swiper-slide><img src="../assets/1.jpg"/></swiper-slide>
         <swiper-slide><img src="../assets/2.jpg"/></swiper-slide>
@@ -19,9 +19,6 @@
           <p class="ui-item-des text-left">{{$t("houseTwo")}}</p>
       </div>
   </div>
-
-
-  
 </template>
 
 <script>
@@ -32,6 +29,7 @@ export default {
   data () {
     return {
       swiperOption: {
+        lazy: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true // 允许点击小圆点跳转

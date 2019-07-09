@@ -2,17 +2,17 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 
-//main
 const Main = resolve => require.ensure([], () => resolve(require('@/components/main.vue')), 'Main'); // main
-// 导航
-const Slider = resolve => require.ensure([], () => resolve(require('@/components/slider.vue')), 'Home'); // 导航
-// 首页
+const Slider = resolve => require.ensure([], () => resolve(require('@/components/slider.vue')), 'Slider'); // 导航
 const Home = resolve => require.ensure([], () => resolve(require('@/components/home.vue')), 'Home'); // 首页
-// 家居
-const House = resolve => require.ensure([], () => resolve(require('@/components/house.vue')), 'House'); // 家居
-const Contact = resolve => require.ensure([], () => resolve(require('@/components/contact.vue')), 'House'); // 家居
-const Brand = resolve => require.ensure([], () => resolve(require('@/components/brand.vue')), 'House'); // 家居
-const Homestay = resolve => require.ensure([], () => resolve(require('@/components/homestay.vue')), 'Homestay'); // 
+const House = resolve => require.ensure([], () => resolve(require('@/components/house.vue')), 'House');
+const Contact = resolve => require.ensure([], () => resolve(require('@/components/contact.vue')), 'House'); 
+const Brand = resolve => require.ensure([], () => resolve(require('@/components/brand.vue')), 'House'); 
+const Homestay = resolve => require.ensure([], () => resolve(require('@/components/homestay.vue')), 'Homestay');  
+const Office = resolve => require.ensure([], () => resolve(require('@/components/office.vue')), 'Office');  
+const BridalShop = resolve => require.ensure([], () => resolve(require('@/components/bridalShop.vue')), 'BridalShop');  
+const Hotel = resolve => require.ensure([], () => resolve(require('@/components/hotel.vue')), 'Hotel');  
+const Business = resolve => require.ensure([], () => resolve(require('@/components/business.vue')), 'Business');  
 
 Vue.use(Router)
 
@@ -49,6 +49,24 @@ export default new Router({
                 path: '/brand',
                 name: 'brand',
                 component: Brand
+            }, {
+                path: '/office',
+                name: 'office',
+                component: Office
+            }, {
+                path: '/bridalShop',
+                name: 'bridalShop',
+                component: BridalShop
+            },
+            {
+                path: '/hotel',
+                name: 'hotel',
+                component: Hotel
+            },
+            {
+                path: '/business',
+                name: 'business',
+                component: Business
             }
         ]
     },

@@ -62,6 +62,7 @@ export default {
     position: absolute;
     top:auto;
     bottom: 70px;
+    left: 230px;
   }  
 }
 

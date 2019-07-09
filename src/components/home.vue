@@ -32,7 +32,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home-bg {
-  background: url('../assets/1.jpg') no-repeat top center;
+  background: url('../assets/house/1.jpeg') no-repeat top center;
   background-size: cover;
   display: flex;
   justify-content: center ;

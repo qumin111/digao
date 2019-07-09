@@ -1,7 +1,7 @@
 <template>
   <div class="h" >
     <div class="ui-brand-bg">
-      <div class="ui-brand-text animated zoomInDown">
+      <div class="ui-brand-text animated zoomIn">
       <!-- <div class="ui-brand-text animated lightSpeedIn delay-1s"> -->
         <h2>{{$t('BrandConcept')}}</h2>
         <p class="ui-font-s ui-brand-one">
@@ -42,7 +42,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .ui-brand-bg {
-    background: url('../assets/1.jpg') no-repeat top center;
+    background: url('../assets/bridalShop/1.jpg') no-repeat top center;
     background-size: cover;
     height: 100%;
   }
@@ -59,7 +59,7 @@ export default {
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 @media (min-width:  992px) { 
     .ui-brand-bg {
-      background: url('../assets/1.jpg') no-repeat top center;
+      background: url('../assets/bridalShop/1.jpg') no-repeat top center;
       background-size: cover;
       text-align: right;
     }
@@ -69,7 +69,7 @@ export default {
     background-color:rgba(40,40,42,1);
     margin-top: 8%;
     display: inline-block;
-    margin-right: 96px;
+    margin-right: 129px;
   }
   .ui-brand-one {
     margin-bottom: 20px;

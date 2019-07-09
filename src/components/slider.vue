@@ -2,7 +2,7 @@
     <div class="ui-nav-box">
         <b-navbar toggleable="lg" class="ui-navbar" type="dark" variant="dark">
             
-            <b-navbar-brand href="#" class="ui-nav-logo">logo</b-navbar-brand>
+            <b-navbar-brand href="#" class="ui-nav-logo"></b-navbar-brand>
                 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
@@ -10,14 +10,14 @@
                         <b-nav-item @click="goPage('home')">{{ $t("home")}}</b-nav-item>
                         <b-nav-item @click="goPage('house')">{{$t("House")}}</b-nav-item>
                         <b-nav-item @click="goPage('homestay')">{{$t("Homestay")}}</b-nav-item>
-                        <b-nav-item @click="goPage('house')">{{$t("WorkSpace")}}</b-nav-item>
-                        <b-nav-item @click="goPage('house')">{{$t("BridalShop")}}</b-nav-item>
-                        <b-nav-item @click="goPage('house')">{{$t("Hotel")}}</b-nav-item>
-                        <b-nav-item @click="goPage('house')">{{$t("Business")}}</b-nav-item>
+                        <b-nav-item @click="goPage('office')">{{$t("WorkSpace")}}</b-nav-item>
+                        <b-nav-item @click="goPage('bridalShop')">{{$t("BridalShop")}}</b-nav-item>
+                        <b-nav-item @click="goPage('hotel')">{{$t("Hotel")}}</b-nav-item>
+                        <b-nav-item @click="goPage('business')">{{$t("Business")}}</b-nav-item>
                         <b-nav-item @click="goPage('brand')">{{$t("Brand")}}</b-nav-item>
                         <b-nav-item @click="goPage('contact')">{{$t("ContactUs")}}</b-nav-item>
                     </b-navbar-nav>
-            </b-collapse>
+                </b-collapse>
 
             <div class="ui-slider-lang">
                 <span @click="changeLang('zh-CN')">{{$t("ZH")}}</span>
@@ -68,7 +68,12 @@ export default {
     right: 80px;
     top: 14px;
 }
-
+.ui-nav-box .ui-nav-logo{
+    background: url('../assets/logo.jpg') no-repeat center;
+    background-size: contain;
+    height: 26px;
+    width: 46px
+}
 .h{
     height: 100%;
 }
@@ -132,8 +137,11 @@ div .swiper-button-prev:focus{
         padding-right: 0;
     }
 
-    .ui-nav-logo {
-        margin-bottom: 98px;
+    .ui-navbar .ui-nav-logo {
+        margin-bottom: 26px;
+        margin-right: 0;
+        width: 100px;
+        height: 70px;
     }
    .ui-nav-box .navbar-expand-lg .navbar-nav {
         -ms-flex-direction: column;

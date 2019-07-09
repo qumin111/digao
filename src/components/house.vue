@@ -1,23 +1,23 @@
 <template>
   <div class="home h-ui-auto">
-      
-      <swiper :options="swiperOption" ref="mySwiper" effect="fade" class="h">
-        <!-- slides -->
-        <swiper-slide><img src="../assets/1.jpg"/></swiper-slide>
-        <swiper-slide><img src="../assets/2.jpg"/></swiper-slide>
-        <swiper-slide><img src="../assets/3.jpg"/></swiper-slide>
-        <swiper-slide><img src="../assets/4.jpg"/></swiper-slide>
-        <!-- Optional controls -->
-        <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
-        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-      </swiper>
-
-      <div class="ui-item-txt text-center">
-          <h4>{{$t("houseTit")}}</h4>
-          <p class="ui-item-des text-left">{{$t("houseOne")}}</p>
-          <p class="ui-item-des text-left">{{$t("houseTwo")}}</p>
-      </div>
+    <swiper :options="swiperOption" ref="mySwiper" effect="fade" class="h">
+      <!-- slides -->
+      <swiper-slide><img src="../assets/house/1.jpeg"/></swiper-slide>
+      <swiper-slide><img src="../assets/house/2.jpeg"/></swiper-slide>
+      <swiper-slide><img src="../assets/house/3.jpeg"/></swiper-slide>
+      <swiper-slide><img src="../assets/house/4.jpeg"/></swiper-slide>
+      <swiper-slide><img src="../assets/house/5.jpeg"/></swiper-slide>
+      <swiper-slide><img src="../assets/house/6.jpeg"/></swiper-slide>
+      <!-- Optional controls -->
+      <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
+      <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
+      <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
+    </swiper>
+    <div class="ui-item-txt text-center">
+      <h4>{{$t("houseTit")}}</h4>
+      <p class="ui-item-des text-left">{{$t("houseOne")}}</p>
+      <p class="ui-item-des text-left">{{$t("houseTwo")}}</p>
+    </div>
   </div>
 </template>
 

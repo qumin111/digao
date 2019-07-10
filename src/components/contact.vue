@@ -57,6 +57,9 @@ export default {
   top:100px;
   left: 30px;
 }
+.ui-contact-code img {
+  height: auto;
+}
 @media (min-width: 992px) {
   .ui-contact-box {
     position: absolute;

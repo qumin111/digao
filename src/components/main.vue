@@ -52,7 +52,7 @@ img{
   padding-top: 48px;
 }
 @media (min-width: 992px) {
-  .ui-slider-box {
+  .ui-wrp-start .ui-slider-box {
     width: 180px;
   }
   .ui-wrp-start .ui-cont-box {

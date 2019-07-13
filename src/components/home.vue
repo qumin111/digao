@@ -2,9 +2,10 @@
   <div class="home h" >
       <div class="home-bg h text-center">
         <div class="animated zoomIn">
-            <h3><p>迪高设计<br/> DECO Design</p> </h3>
-            <p>
-              从历史中找到一份沉静，在自然中寻得一份和谐；<br/> 我们希望更多的人关注自己居住和工作的空间
+            <div class="home-logo"><img src="../assets/logow.png" alt=""></div>
+            <h3 class="home-tit">迪高设计</h3>
+            <p class="home-des">
+               Design makes life more simple
             </p> 
         </div>
       </div>
@@ -32,16 +33,37 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home-bg {
-  background: url('../assets/house/1.jpeg') no-repeat top center;
+  background: url('../assets/homebg.jpg') no-repeat top center;
   background-size: cover;
   display: flex;
   justify-content: center ;
   color: aliceblue;
   align-items: center;
 }
+.home-logo {
+  width: 300px;
+  padding-bottom: 18px;
+}
+.home-logo img{
+  height: auto;
+}
+.home-tit{
+  font-size: 24px;
+  margin-bottom: 0;
+  letter-spacing: 24px;
+}
+.home-des {
+  font-size: 18px;
+}
 @media (min-width: 992px) {
   .home-bg {
     align-items: center;
+  }
+  .home-logo {
+    width: 618px;
+  }
+  .home-tit{
+    letter-spacing: 34px;
   }
 }
   

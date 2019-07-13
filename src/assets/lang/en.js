@@ -40,7 +40,7 @@ module.exports = {
     hotelOne: "The design takes on a large part of the hotel brand, which is closely related to the hotel's brand positioning and brand strategy. Hotel design is generally based on the theme of the hotel. The theme determines the people facing the group, determines the cultural characteristics of the hotel, and what kind of accommodation experience you want to create for your customers needs to be achieved through the combination of hotel space and soft furnishings.",
     hotelTwo: "A successful theme hotel is not only to create a concept as simple as it is, to make the theme a veritable name, and even to connect the theme to an industry, to form a super-added value, it is necessary to thoroughly study the location of the hotel and its cultural heritage, market demand, hotel investment, Factors such as corporate culture, the hotel's theme is integrated into the regional cultural environment, integrated into the hotel investment corporate culture and the hotel's mood and sensory experience." , 
     //办公室
-    officeTit: 'Ideas of work space design',
+    officeTit: 'Ideas of office design',
     officeOne: "The office space is based on the “holistic planning” and fully considers the ergonomics, efficiency of use, network, lighting, noise and other details for systematic design. The office space is different from the living space. The demand for the corresponding adjustment of the flow of personnel will be relatively high. The flexibility of the space division should be fully considered, especially the reusable value of office furniture should also be considered.",
     // 商业
     businessTit: '商业设计思想',

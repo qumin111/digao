@@ -9,10 +9,9 @@
                     <b-navbar-nav column>
                         <b-nav-item @click="goPage('home')">{{ $t("home")}}</b-nav-item>
                         <b-nav-item @click="goPage('house')">{{$t("House")}}</b-nav-item>
-                        <b-nav-item @click="goPage('homestay')">{{$t("Homestay")}}</b-nav-item>
+                        <b-nav-item @click="goPage('hotel')">{{$t("Hotel")}}</b-nav-item>
                         <b-nav-item @click="goPage('office')">{{$t("WorkSpace")}}</b-nav-item>
                         <b-nav-item @click="goPage('bridalShop')">{{$t("BridalShop")}}</b-nav-item>
-                        <b-nav-item @click="goPage('hotel')">{{$t("Hotel")}}</b-nav-item>
                         <b-nav-item @click="goPage('business')">{{$t("Business")}}</b-nav-item>
                         <b-nav-item @click="goPage('brand')">{{$t("Brand")}}</b-nav-item>
                         <b-nav-item @click="goPage('contact')">{{$t("ContactUs")}}</b-nav-item>
@@ -177,6 +176,9 @@ div .swiper-button-prev:focus{
     }
     .ui-item-txt {
         display: none;
+    }
+    div .swiper-button-prev {
+        left: 190px;
     }
 }
 

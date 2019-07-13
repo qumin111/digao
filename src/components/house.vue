@@ -16,7 +16,6 @@
     <div class="ui-item-txt text-center">
       <h4>{{$t("houseTit")}}</h4>
       <p class="ui-item-des text-left">{{$t("houseOne")}}</p>
-      <p class="ui-item-des text-left">{{$t("houseTwo")}}</p>
     </div>
   </div>
 </template>

@@ -42,7 +42,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .ui-brand-bg {
-    background: url('../assets/bridalShop/1.jpg') no-repeat top center;
+    background: url('../assets/brandbg.jpg') no-repeat top center;
     background-size: cover;
     height: 100%;
   }
@@ -59,14 +59,14 @@ export default {
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 @media (min-width:  992px) { 
     .ui-brand-bg {
-      background: url('../assets/bridalShop/1.jpg') no-repeat top center;
+      background: url('../assets/brandbg.jpg') no-repeat top center;
       background-size: cover;
       text-align: right;
     }
   .ui-brand-text {
     width: 365px;
-    padding: 20px 20px 15px 22px;
-    background-color:rgba(40,40,42,1);
+    padding: 26px 20px 30px 22px;
+    background-color:rgba(40,40,42,.7);
     margin-top: 8%;
     display: inline-block;
     margin-right: 129px;

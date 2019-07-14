@@ -77,6 +77,7 @@ export default {
   padding-top: 51px;
 }
 .contact-logo img{
+  width: 100%;
   height: auto;
 }
 .contact-tit{
@@ -94,7 +95,7 @@ export default {
     position: absolute;
     top:auto;
     bottom: 70px;
-    left: 40%;
+    left: 44%;
   }  
   .contact-one {
     height: 100%;
@@ -102,6 +103,7 @@ export default {
     justify-content: center ;
     color: aliceblue;
     align-items: center;
+    padding-left: 180px;
   }
   .contact-logo {
     width: 618px;
@@ -114,6 +116,9 @@ export default {
   .ui-contact-txt {
     display: inline-block;
     vertical-align: middle;
+  }
+  .contact-logo img{
+    width: 618px;
   }
 }
 

@@ -45,6 +45,7 @@ export default {
   padding-bottom: 18px;
 }
 .home-logo img{
+  width: 100%;
   height: auto;
 }
 .home-tit{
@@ -60,6 +61,9 @@ export default {
     align-items: center;
   }
   .home-logo {
+    width: 618px;
+  }
+  .home-logo img {
     width: 618px;
   }
   .home-tit{

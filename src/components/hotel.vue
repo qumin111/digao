@@ -1,7 +1,7 @@
 <template>
   <div class="home h-ui-auto">
       
-      <swiper :options="swiperOption" ref="mySwiper" effect="fade" class="h">
+      <swiper :options="swiperOption" ref="mySwiper" class="swiper-h">
         <!-- slides -->
         <swiper-slide><img src="../assets/hotel/1.jpeg"/></swiper-slide>
         <swiper-slide><img src="../assets/hotel/2.jpeg"/></swiper-slide>
@@ -28,13 +28,14 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import wxapi from '../../common/wxapi.js'
 export default {
   name: 'house',
   data () {
     return {
       swiperOption: {
-        lazy: true,
+        slidesPerView: 'auto',
+        spaceBetween: 5,
+        centeredSlides: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true // 允许点击小圆点跳转
@@ -43,10 +44,6 @@ export default {
           delay: 3000,
           disableOnInteraction: false // 手动切换之后继续自动轮播
         },
-        effect : 'fade',//切换方式为淡入淡出
-          fade: {
-            crossFade: true,//为true为淡入淡出
-          },
         loop: true,//循环轮播
         navigation: {
           nextEl: '.swiper-button-next',

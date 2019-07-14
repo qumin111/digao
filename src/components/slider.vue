@@ -2,7 +2,7 @@
     <div class="ui-nav-box">
         <b-navbar toggleable="lg" class="ui-navbar" type="dark" variant="dark">
             
-            <b-navbar-brand href="#" class="ui-nav-logo"></b-navbar-brand>
+            <b-navbar-brand href="#" class="ui-nav-logo" @click="goPage('home')"></b-navbar-brand>
                 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>

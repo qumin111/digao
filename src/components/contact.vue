@@ -86,7 +86,7 @@ export default {
   letter-spacing: 16px;
 }
 .ui-contact-code img {
-  width: 100px;
+  width: 120px;
   height: auto;
 }
   

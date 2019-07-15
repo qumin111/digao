@@ -50,7 +50,7 @@ export default {
 .ui-wrp-start .ui-cont-box {
   padding-top: 48px;
 }
-.swiper-slide {
+.swiper-wrapper .swiper-slide {
   width: auto;
   min-width: 20%;
   max-width: 80%;

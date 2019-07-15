@@ -17,9 +17,8 @@
         <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
       </swiper>
       <div class="ui-item-txt text-center">
-          <h4>{{$t("hotelTit")}}</h4>
-          <p class="ui-item-des text-left">{{$t("hotelOne")}}</p>
-          <p class="ui-item-des text-left">{{$t("hotelTwo")}}</p>
+          <h4>{{$t("businessTit")}}</h4>
+          <p class="ui-item-des text-left">{{$t("businessOne")}}</p>
       </div>
   </div>
 </template>

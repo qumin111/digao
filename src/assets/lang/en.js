@@ -43,7 +43,7 @@ module.exports = {
     officeTit: 'Ideas of office design',
     officeOne: "The office space is based on the “holistic planning” and fully considers the ergonomics, efficiency of use, network, lighting, noise and other details for systematic design. The office space is different from the living space. The demand for the corresponding adjustment of the flow of personnel will be relatively high. The flexibility of the space division should be fully considered, especially the reusable value of office furniture should also be considered.",
     // 商业
-    businessTit: '商业设计思想',
-    businessOne: ''
+    businessTit: 'Ideas of commercial space design',
+    businessOne: "People-oriented is the basic requirement for commercial space design. In the design process, not only the aesthetics and comfort of the space should be reflected in the visual and sensation of the space, but also from the perspective of the operator, combined with the business mode of different formats, the value of the design should be reflected as much as possible, such as in marketing, transformation. Angle. A good commercial space not only comprehensively considers the user's feelings, but also combines the business appeal of the operator."
   }
 }

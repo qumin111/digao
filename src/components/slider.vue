@@ -8,7 +8,7 @@
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav column>
                         <b-nav-item @click="goPage('home')">{{ $t("home")}}</b-nav-item>
-                        <b-nav-item @click="goPage('house')">{{$t("House")}}</b-nav-item>
+                        <!-- <b-nav-item @click="goPage('house')">{{$t("House")}}</b-nav-item> -->
                         <b-nav-item @click="goPage('hotel')">{{$t("Hotel")}}</b-nav-item>
                         <b-nav-item @click="goPage('office')">{{$t("WorkSpace")}}</b-nav-item>
                         <b-nav-item @click="goPage('bridalShop')">{{$t("BridalShop")}}</b-nav-item>
@@ -22,7 +22,7 @@
                 <span @click="changeLang('zh-CN')">{{$t("ZH")}}</span>
                 <span @click="changeLang('en-us')">/ {{$t("EN")}}</span>
             </div>
-            <small class="ui-slider-bei">京ICP备12345</small>
+            <small class="ui-slider-bei">京ICP备18040854号-3</small>
         </b-navbar>
     </div>
 </template>

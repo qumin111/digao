@@ -22,7 +22,7 @@
                 <span @click="changeLang('zh-CN')">{{$t("ZH")}}</span>
                 <span @click="changeLang('en-us')">/ {{$t("EN")}}</span>
             </div>
-            <small class="ui-slider-bei">京ICP备18040854号-3</small>
+            <small class="ui-slider-bei" @click="beian">京ICP备18040854号-3</small>
         </b-navbar>
     </div>
 </template>
@@ -42,6 +42,9 @@ export default {
         changeLang (val) {
             localStorage.lang = val;
             this.$i18n.locale = val;
+        },
+        beian () {
+            window.open ("http://beian.miit.gov.cn");
         }
     }
 };

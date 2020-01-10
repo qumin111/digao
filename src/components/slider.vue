@@ -59,6 +59,7 @@ export default {
     background-color: #343a40;
     text-align: center;
     line-height: 35px;
+    cursor: pointer;
 }
 .ui-slider-lang {
     color: rgba(255, 255, 255, 0.5);
